@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 24px;
+	line-height: 1.6em;
+  font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	color: #5b5b5f;
+}
+
+h1, h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+section {
+  height: 90%;
+  max-height: 600px;
+  display: block;
+  padding: 10vh 15vh;
+  min-width: 1150px;
+  overflow: hidden;
+}
+
+article {
+  width: 500px;
+
+  p {
+    margin-top: .5em;
+    margin-bottom: 2em;
+  }
+}
+
+.btn {
+  border-radius: 50px;
+  padding: .75em 1.5em .5em 1.5em;
+  display: inline-block;
+  border: 2px solid $main;
+  color: $main;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9em;
+  line-height: 1.5em;
+  font-weight: normal;
+  &.btn-primary {
+    background: $main;
+    color: #fff;
+  }
+}
+
+.btn + .btn {
+  margin-left: 1em;
+}

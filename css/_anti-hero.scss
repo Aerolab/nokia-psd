@@ -1,0 +1,34 @@
+#anti-hero {
+  @include display-flex;
+  @include flex-props(row wrap, space-between, center, center);
+
+  height: auto;
+
+  .device {
+    position: relative;
+    margin-right: 10vh;
+
+    img.big {
+      width: auto;
+      height: 80vh;
+      max-height: 600px;
+      display: block;
+      margin: 0;
+      position: relative;
+      z-index: 10;
+    }
+    img.small {
+      width: 65%;
+      position: absolute;
+      top: 50%;
+      left: -70px;
+      z-index: 1;
+      -webkit-transform: translateY(-50%);
+      opacity: .7;
+    }
+    img.right {
+      left: auto;
+      right: -70px;
+    }
+  }
+}

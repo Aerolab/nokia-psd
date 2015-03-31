@@ -1,0 +1,36 @@
+#what-a-mess {
+  @include display-flex;
+  @include flex-props(row wrap, space-between, center, center);
+
+  background: $color-black;
+  color: #eee;
+}
+
+#omg-why {
+  width: 500px;
+  margin-left: -10vh;
+  position: relative;
+  img {
+    max-width: 500px;
+    float: right;
+  }
+  .ad-01 {
+    position: relative;
+    left: -40px;
+    top: -150px;
+    width: 400px;
+  }
+  .ad-02 {
+    position: absolute;
+    top: 155px;
+    right: -80px;
+    width: 400px;
+    z-index: 10;
+  }
+  .ad-03 {
+    position: absolute;
+    top: 90px;
+    left: -40px;
+    width: 300px;
+  }
+}

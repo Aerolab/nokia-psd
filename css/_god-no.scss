@@ -1,0 +1,85 @@
+#god-no {
+  @include display-flex;
+  @include flex-props(row wrap, space-between, center, center);
+  padding-bottom: 0;
+
+  .device {
+    width: 400px;
+    height: 100%;
+    display: block;
+    background: url(../images/color-black.png) no-repeat top center;
+    background-size: 100% auto !important;
+  }
+
+  &.color-black {
+    background: $color-black;
+    .device { background: url(../images/color-black.png) no-repeat top center; }
+  }
+  &.color-red {
+    background: $color-red;
+    .device { background: url(../images/color-red.png) no-repeat top center; }
+  }
+  &.color-gray {
+    background: $color-gray;
+    .device { background: url(../images/color-gray.png) no-repeat top center; }
+  }
+  &.color-blue {
+    background: $color-blue;
+    .device { background: url(../images/color-blue.png) no-repeat top center; }
+  }
+  &.color-green {
+    background: $color-green;
+    .device { background: url(../images/color-green.png) no-repeat top center; }
+  }
+  &.color-yellow { 
+    background: $color-yellow;
+    .device { background: url(../images/color-yellow.png) no-repeat top center; }
+  }
+}
+
+#color-select {
+  padding: 0;
+  li {
+    display: inline-block;
+    list-style: none;
+
+
+    
+    + li {
+      margin-left: 10px;
+    }
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      outline: none;
+      border: 2px solid transparent;
+    }
+
+    &.color-black a { background: $color-black; }
+    &.color-red a { background: $color-red; }
+    &.color-gray a { background: $color-gray; }
+    &.color-blue a { background: $color-blue; }
+    &.color-green a { background: $color-green; }
+    &.color-yellow a { background: $color-yellow; }
+
+    &.active {
+      &:first-child {
+        margin-left: 0;
+      }
+      + li {
+        margin-left: 6px;
+      }
+      a { 
+        border: 2px solid $main;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        top: 2px;
+        left: -1px;
+      }
+    }
+  }
+}

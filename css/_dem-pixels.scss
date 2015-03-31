@@ -1,0 +1,40 @@
+#gimme-dem-pixels {
+  @include display-flex;
+  @include flex-props(row wrap, space-between, center, center);
+
+  .device {
+    width: 250px;
+    height: 100%;
+    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 150px;
+    }
+
+    .zoom {
+      position: absolute;
+      top: 0;
+      left: -140px;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 200%;
+        height: auto;
+        position: relative;
+        top: -70px;
+        left: -150px
+      }
+    }
+  }
+
+  .huge {
+    font-size: 4em;
+  }
+}

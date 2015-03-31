@@ -1,0 +1,24 @@
+footer {
+  @include display-flex;
+  @include flex-props(row wrap, space-between, center, center);
+  padding: 0 15vh;
+  font-size: .65em;
+  font-weight: normal;
+  position: relative;
+
+  .kite {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -20px;
+    border: none; 
+    img { width: 40px; }
+  }
+
+  a {
+    color: #fb901f;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #fb901f;
+  }
+}
