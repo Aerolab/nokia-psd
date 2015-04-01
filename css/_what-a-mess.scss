@@ -1,9 +1,8 @@
 #what-a-mess {
-  @include display-flex;
-  @include flex-props(row wrap, space-between, center, center);
-
   background: $color-black;
   color: #eee;
+
+  .wrapper { height: 600px; }
 }
 
 #omg-why {
@@ -23,14 +22,14 @@
   .ad-02 {
     position: absolute;
     top: 155px;
-    right: -80px;
+    right: -40px;
     width: 400px;
     z-index: 10;
   }
   .ad-03 {
     position: absolute;
     top: 90px;
-    left: -40px;
+    left: -100px;
     width: 300px;
   }
 }

@@ -1,11 +1,11 @@
 #god-no {
-  @include display-flex;
-  @include flex-props(row wrap, space-between, center, center);
   padding-bottom: 0;
-
+  
+  .wrapper { padding: 0; }
   .device {
     width: 400px;
-    height: 100%;
+    height: 530px;
+    margin-top: 70px;
     display: block;
     background: url(../images/color-black.png) no-repeat top center;
     background-size: 100% auto !important;
@@ -13,22 +13,27 @@
 
   &.color-black {
     background: $color-black;
+    color: #eee;
     .device { background: url(../images/color-black.png) no-repeat top center; }
   }
   &.color-red {
     background: $color-red;
+    color: #eee;
     .device { background: url(../images/color-red.png) no-repeat top center; }
   }
   &.color-gray {
     background: $color-gray;
+    color: #eee;
     .device { background: url(../images/color-gray.png) no-repeat top center; }
   }
   &.color-blue {
     background: $color-blue;
+    color: #eee;
     .device { background: url(../images/color-blue.png) no-repeat top center; }
   }
   &.color-green {
     background: $color-green;
+    color: #eee;
     .device { background: url(../images/color-green.png) no-repeat top center; }
   }
   &.color-yellow { 
@@ -73,7 +78,7 @@
         margin-left: 6px;
       }
       a { 
-        border: 2px solid $main;
+        border: 2px solid #fff;
         width: 28px;
         height: 28px;
         position: relative;

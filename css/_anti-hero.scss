@@ -1,7 +1,4 @@
 #anti-hero {
-  @include display-flex;
-  @include flex-props(row wrap, space-between, center, center);
-
   height: auto;
 
   .device {

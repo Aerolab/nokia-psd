@@ -8,3 +8,10 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
+
+var wow = new WOW(
+  {
+    mobile: false
+  }
+);
+wow.init();
