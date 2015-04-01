@@ -40,7 +40,7 @@ section {
   @include display-flex;
   @include flex-props(row wrap, space-between, center, center);
   padding: 10vh 0;
-  max-height: 600px;
+  // max-height: 600px;
   max-width: 1024px;
   margin: 0 auto;
 }

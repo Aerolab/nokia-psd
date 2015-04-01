@@ -224,7 +224,6 @@ section {
   -moz-align-content: center;
   -moz-align-items: center;
   padding: 10vh 0;
-  max-height: 600px;
   max-width: 1024px;
   margin: 0 auto; }
 
@@ -450,7 +449,10 @@ article {
     padding: 30px 0 0 0; }
     #baby-youre-so-squared ul li {
       display: inline-block;
-      margin: 0 30px; }
+      margin: 0 25px 25px;
+      padding: 16px;
+      background-image: url("../images/screens/display.png");
+      background-repeat: no-repeat; }
       #baby-youre-so-squared ul li img {
         width: 250px; }
 
@@ -476,3 +478,5 @@ footer {
 
 @media (max-width: 780px) {
   /* do stuff */ }
+
+/*# sourceMappingURL=style.css.map */

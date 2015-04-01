@@ -15,7 +15,12 @@
 
     li {
       display: inline-block;
-      margin: 0 30px; 
+      margin: 0 25px 25px;
+      padding: 16px;
+
+      background-image: url("../images/screens/display.png");
+      background-repeat: no-repeat;
+      // background-position: 50% 50%;
 
       img { width: 250px; }
     }
