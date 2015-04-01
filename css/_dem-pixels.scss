@@ -1,10 +1,7 @@
 #gimme-dem-pixels {
-  @include display-flex;
-  @include flex-props(row wrap, space-between, center, center);
-
   .device {
     width: 250px;
-    height: 100%;
+    height: 420px;
     display: block;
     position: relative;
 
@@ -36,5 +33,11 @@
 
   .huge {
     font-size: 4em;
+    margin-bottom: 0;
+    + p {
+      margin-top: 0;
+      font-size: .75em;
+      line-height: .75em;
+    }
   }
 }
