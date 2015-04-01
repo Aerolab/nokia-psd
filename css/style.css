@@ -244,7 +244,8 @@ article {
   text-transform: uppercase;
   font-size: .9em;
   line-height: 1.5em;
-  font-weight: normal; }
+  font-weight: normal;
+  cursor: pointer; }
   .btn.btn-primary {
     background: #2194d0;
     color: #fff; }
