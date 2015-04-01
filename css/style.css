@@ -248,6 +248,8 @@ article {
   .btn.btn-primary {
     background: #2194d0;
     color: #fff; }
+  .btn:hover {
+    opacity: 0.8; }
 
 .btn + .btn {
   margin-left: 1em; }
