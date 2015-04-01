@@ -31,7 +31,8 @@
   border: 2px solid #ffffff;
   border-top: none;
   border-right: none;
-  transition: all 0.2s ease; }
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
 
 .blockrain-btn::after {
   position: absolute;
@@ -43,7 +44,8 @@
   border: 2px solid #ffffff;
   border-left: none;
   border-bottom: none;
-  transition: all 0.2s ease; }
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
 
 .blockrain-btn:hover::before {
   left: 5px;
@@ -85,7 +87,9 @@
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .blockrain-start-msg, .blockrain-game-over-msg {
   font-size: 18px;
@@ -128,6 +132,12 @@
   line-height: 0.75em;
   vertical-align: -15%; }
 
+@font-face {
+  font-family: 'Pixelmix';
+  src: url("../fonts/pixelmix-webfont.eot");
+  src: url("../fonts/pixelmix-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pixelmix-webfont.woff2") format("woff2"), url("../fonts/pixelmix-webfont.woff") format("woff"), url("../fonts/pixelmix-webfont.ttf") format("truetype"), url("../fonts/pixelmix-webfont.svg#pixelmixregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .col-1-12 {
   width: 80px;
   padding: 0 10px; }
@@ -208,13 +218,25 @@ section {
   overflow: hidden; }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   -moz-display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-flex-flow: row wrap;
   -webkit-justify-content: space-between;
   -webkit-align-content: center;
@@ -445,6 +467,10 @@ article {
     display: block;
     text-align: center;
     padding: 15vh 0; }
+  #baby-youre-so-squared h2 {
+    font-family: 'Pixelmix';
+    color: #3E4630;
+    font-size: 1em; }
   #baby-youre-so-squared ul {
     list-style: none;
     text-align: center;

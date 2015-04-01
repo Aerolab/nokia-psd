@@ -26,3 +26,16 @@
   line-height: 0.75em;
   vertical-align: -15%;
 }
+
+@font-face {
+   font-family: 'Pixelmix';
+   src: url('../fonts/pixelmix-webfont.eot');
+   src: url('../fonts/pixelmix-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pixelmix-webfont.woff2') format('woff2'),
+        url('../fonts/pixelmix-webfont.woff') format('woff'),
+        url('../fonts/pixelmix-webfont.ttf') format('truetype'),
+        url('../fonts/pixelmix-webfont.svg#pixelmixregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
+}
