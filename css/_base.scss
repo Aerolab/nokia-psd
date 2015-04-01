@@ -74,3 +74,8 @@ article {
 .btn + .btn {
   margin-left: 1em;
 }
+
+.st_facebook_hcount, .st_facebook_hcount *, .st_twitter_hcount, .st_twitter_hcount * {
+  box-sizing: initial;
+  -moz-box-sizing: initial;
+}
